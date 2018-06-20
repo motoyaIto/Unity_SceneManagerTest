@@ -11,7 +11,11 @@ public class SceneManagerController : MonoBehaviour {
         //Debug.Log(SceneManager.GetActiveScene().name);
 
         //シーンをロードする
-        //SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        SceneManager.LoadScene(1);
+
+        //非同期ロード
+        //SceneManager.LoadSceneAsync(1);
+
 
         //非同期
         //SceneManager.LoadScene(1, LoadSceneMode.Additive);
@@ -21,7 +25,7 @@ public class SceneManagerController : MonoBehaviour {
         //Debug.Log(SceneManager.sceneCount);
 
         //読み込まれてるシーンの名前を取得
-        //for(int i = 0; i < SceneManager.sceneCount; i++)
+        //for (int i = 0; i < SceneManager.sceneCount; i++)
         //{
         //    Debug.Log(SceneManager.GetSceneAt(i).name);
         //}
@@ -29,6 +33,8 @@ public class SceneManagerController : MonoBehaviour {
         //ビルド設定されている数を取得
         //Debug.Log(SceneManager.sceneCountInBuildSettings);
 
+        //非同期によるシーン破棄
+        //SceneManager.UnloadSceneAsync(0) ;
 
     }
 	
